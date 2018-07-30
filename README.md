@@ -33,4 +33,4 @@ curl -k https://localhost:443
 Response with: `"Nginx Running \<container id>"`
 
 
-_Make sure the docker is installed._
+_*** Make sure the docker is installed._
