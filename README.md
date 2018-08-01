@@ -8,7 +8,7 @@ This is a repo for running nginx in automation way to expose both 80 and 443
     
 **conf.d**: 2 configuration files for 80 and 443, plus generated server.crt and server.key. No optimization for ssl yet.
 
-**nginx-443-80.sh**: The docker command to run nginx server as a container.
+**nginx-80-443.sh**: The docker command to run nginx server as a container.
 
 
 ## Usage: 
