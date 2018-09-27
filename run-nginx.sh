@@ -15,10 +15,10 @@ else
     command="echo Nginx Running: \$(hostname) > /usr/share/nginx/html/index.html && exec nginx -g 'daemon off;'"
 fi
 
-echo "INFO: cleaning container if exists $container_name"
-docker rm --force $container_name
+echo "INFO : cleaning container if exists $container_name"
+docker rm --force $container_name > /dev/null 2>&1
 
-echo "INFO: starting container $container_name .."
+echo "INFO : starting container $container_name .."
 docker run \
     --name $container_name \
     -itd \
