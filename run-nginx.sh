@@ -7,7 +7,7 @@ fi
 
 settings=$1
 cdir=`cd $(dirname $0); pwd`
-source $cdir/$settings
+source $settings
 
 if [ -n "$webroot" ]; then
     if [ ! -d "$webroot" ]; then
