@@ -1,5 +1,12 @@
+# http_port optional: the exported http port
 http_port=80
+
+# https_port optional: the exported https port
 https_port=443
+
+# container_name required: container name used for tracing
 container_name=nginx-http-https
-webroot=/Users/zong/Documents/Works/4.2018.07.16-Coding-Test/angularjs
+
+# webroot optional: the web root
+webroot=/path/to/webroot
 
