@@ -7,7 +7,12 @@ fi
 
 settings=$1
 cdir=`cd $(dirname $0); pwd`
-source $settings
+if [ ! -f "$settings" ]; then
+    echo "setting file $settings not exists"
+    exit 1
+else
+    source $settings
+fi
 
 if [ -n "$webroot" ]; then
     if [ ! -d "$webroot" ]; then
